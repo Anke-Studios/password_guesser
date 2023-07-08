@@ -4,18 +4,21 @@ def generate_bigsmall(number):
     charset = list(''.join([chr(i) for i in range(ord('A'), ord('Z')+1)]) + ''.join([chr(i) for i in range(ord('a'), ord('z')+1)]))
     return ''.join(random.choice(charset) for _ in range(number))
 
-bigsmall = ''.join([chr(i) for i in range(ord('A'), ord('Z')+1)]) + ''.join([chr(i) for i in range(ord('a'), ord('z')+1)])
+global bigsmall
+bigsmall = list(''.join([chr(i) for i in range(ord('A'), ord('Z')+1)]) + ''.join([chr(i) for i in range(ord('a'), ord('z')+1)]))
 
 def generate_number(number):
     charset = list(''.join([str(i) for i in range(10)]))
     return ''.join(random.choice(charset) for _ in range(number))
 
-numbers = ''.join([str(i) for i in range(10)])
+global numbers
+numbers = list(''.join([str(i) for i in range(10)]))
 
 def generate_strongcode(number):
     charset = list(''.join([chr(i) for i in range(ord('A'), ord('Z')+1)]) + ''.join([chr(i) for i in range(ord('a'), ord('z')+1)]) + ''.join([str(i) for i in range(10)]) + ['!', '#', '$', '%', '&', "'", '*', '+', '-', '/', '=', '?', '^', '_', '`', '{', '|', '}', '~', '@', ' '])
     return ''.join(random.choice(charset) for _ in range(number))
 
+global strongcode
 strongcode = ''.join([chr(i) for i in range(ord('A'), ord('Z')+1)]) + ''.join([chr(i) for i in range(ord('a'), ord('z')+1)]) + ''.join([str(i) for i in range(10)]) + ['!', '#', '$', '%', '&', "'", '*', '+', '-', '/', '=', '?', '^', '_', '`', '{', '|', '}', '~', '@', ' '])
 
 def type_of_code():

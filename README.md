@@ -2,7 +2,7 @@
 ## Author
 [Ondřej Klaus](https://github.com/ondra2018)
 ## Description
-The password guesser allows you to enter one of three types of code, up to 30 characters long, and then tries to guess the code. The program is available in Ruby and Python
+The password guesser allows you to enter one of three types of code, up to 30 characters long, and then tries to guess the code. The program is available in Ruby (Python is not yet supported)
 ## Instalation
 **On MacOS**
 - If you don't have [Homebrew](https://brew.sh/index_cs), install it
